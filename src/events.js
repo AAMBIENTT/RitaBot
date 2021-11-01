@@ -75,13 +75,6 @@ exports.listen = function listen (client)
          Shard: #${singleShard} Shards online -
          ${client.guilds.cache.size.toLocaleString()} guilds.`);
 
-         client.user.setPresence({
-            "activity": {
-               "name": "ritabot.gg | !tr help",
-               "type": "PLAYING"
-            },
-            "status": "online"
-         });
 
          // ---------------------
          // Log connection event
