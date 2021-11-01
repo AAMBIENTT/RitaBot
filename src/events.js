@@ -75,7 +75,14 @@ exports.listen = function listen (client)
          Shard: #${singleShard} Shards online -
          ${client.guilds.cache.size.toLocaleString()} guilds.`);
 
-
+                  client.user.setPresence({
+            "activity": {
+               "name": "Ping Mellow if you're reading this",
+               "type": "PLAYING"
+            },
+            "status": "online"
+         });
+ 
          // ---------------------
          // Log connection event
          // ---------------------
